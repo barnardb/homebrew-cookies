@@ -2,8 +2,8 @@ class Cookies < Formula
   desc "Command-line tool for extracting cookies from the user's web browser"
   homepage "https://github.com/barnardb/cookies"
   url "https://github.com/barnardb/cookies.git",
-      :tag      => "v0.2.0",
-      :revision => "c20e30ffce15b1f778249c30e02eabcbd674d405"
+      :tag      => "v0.2.1",
+      :revision => "180be227fda81f2d05ec91fad5d246826854c909"
   head "https://github.com/barnardb/cookies.git"
 
   depends_on "go" => :build
