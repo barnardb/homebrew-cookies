@@ -13,12 +13,16 @@ The repo contains a [Homebrew] formula for [barnardb/cookies].
 Or `brew tap barnardb/cookies` and then `brew install cookies`.
 
 Or install via URL (which will not receive updates):
-
-```
+```bash
 brew install https://raw.githubusercontent.com/barnardb/homebrew-cookies/master/Formula/cookies.rb
 ```
 
 
-## Documentation
+## Updating
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Run `./check.sh` to see if there's a newer version to or if brew has any opinions about improving the formula.
+
+You to check that the formula works, run
+```bash
+brew install --reinstall Formula/cookies.rb && brew test cookies
+```
