@@ -20,9 +20,9 @@ brew install https://raw.githubusercontent.com/barnardb/homebrew-cookies/master/
 
 ## Updating
 
-Run `./check.sh` to see if there's a newer version to or if brew has any opinions about improving the formula.
+Run `./update.sh` to check if there's a new upstream release and make and push an update to the formula if there is.
 
-You to check that the formula works, run
-```bash
-brew install --reinstall Formula/cookies.rb && brew test cookies
-```
+Run `./check-reinstall-test.sh` after making other changes to the formula
+to see if there's a newer upstream version,
+if brew has any opinions about improving the formula,
+and if the we can successfully install the formula.
