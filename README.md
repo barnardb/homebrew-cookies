@@ -1,4 +1,4 @@
-# Homerew-Cookies
+# Homebrew-Cookies
 
 The repo contains a [Homebrew] formula for [barnardb/cookies].
 
