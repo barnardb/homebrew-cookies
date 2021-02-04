@@ -1,7 +1,7 @@
 class Cookies < Formula
   desc "Command-line tool for extracting cookies from the user's web browser"
   homepage "https://github.com/barnardb/cookies"
-  url "https://github.com/barnardb/cookies.git", tag: "v0.4.0"
+  url "https://github.com/barnardb/cookies.git", tag: "v0.5.0"
   license "MIT"
   head "https://github.com/barnardb/cookies.git"
 
