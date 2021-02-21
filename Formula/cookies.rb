@@ -23,7 +23,7 @@ class Cookies < Formula
 
   test do
     test_command("cookies", "--help",
-      stdout: %r{usage: .+/cookies \[options…] <URL> \[<cookie-name>]\n\n.+\n})
+      stdout: %r{usage: .+/cookies \[options…\] <URL> \[<cookie-name>\]\n\n.+\n})
 
     test_command("cookies", "http://example.com/this/path/is/assumued/not-to-exist",
       exit_status: 1)
