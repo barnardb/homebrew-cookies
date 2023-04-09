@@ -1,14 +1,14 @@
 class Cookies < Formula
   desc "Command-line tool for extracting cookies from the user's web browser"
   homepage "https://github.com/barnardb/cookies"
-  url "https://github.com/barnardb/cookies.git", tag: "v0.5.0"
+  url "https://github.com/barnardb/cookies.git", tag: "v0.5.1"
   license "MIT"
-  head "https://github.com/barnardb/cookies.git"
+  head "https://github.com/barnardb/cookies.git", branch: "main"
 
-  depends_on "go@1.15" => :build
+  depends_on "go" => :build
 
   def install
-    system "go", "build"
+    system "./build.sh", "0.5.1"
     bin.install "cookies"
   end
 
@@ -22,6 +22,8 @@ class Cookies < Formula
   end
 
   test do
+    test_command("cookies", "--version", stdout: "0.5.1\n")
+
     test_command("cookies", "--help",
       stdout: %r{usage: .+/cookies \[options…\] <URL> \[<cookie-name>\]\n\n.+\n})
 
